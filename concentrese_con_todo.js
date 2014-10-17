@@ -18,9 +18,6 @@ function inicio()
 	var TiempoTotal = "";
 
 
-/**************************************************************************
- * Funcion que permite contar minutos y  segundos transcurridos del juego *
- **************************************************************************/
 	function contartiempo()
 	{
 		segundos++;
@@ -32,11 +29,6 @@ function inicio()
 		}
 	}
 	
-	
-/**********************************************************************
-*Funcion que permite crear el escenario desde javascrip enviando      *
-*variables de texo directamente al archivo de html                    *
-**********************************************************************/
 	
 	var creaEscenario = function()
 	{
@@ -77,10 +69,6 @@ function inicio()
 	jugar();
 
 	
-/**********************************************************************
-*Funcion que permite enviar un texto vacio al escenario para que no se* 
-imprima nada y asi poder limpiar todo el tablero                      *
-**********************************************************************/
 	function limpiaEscenario()
 	{
 		for(i=1;i<21;i++)
@@ -88,12 +76,7 @@ imprima nada y asi poder limpiar todo el tablero                      *
 			nom_div(i+"a").src = "Images/back.jpg";
 		}		
 	}
-/**********************************************************************
-*Funcion que permite re-organizar los elementos del arreglo txtFichas *
-*de manera aleatoria y luego imprimirlo en el escenario para que el   *
-*usuario pueda vizualizar las fichas y aprenderselas para asi iniciar *
-*el juego.															  *
-**********************************************************************/
+
 	function jugar()
 	{
 		var i = 0;
@@ -129,10 +112,6 @@ imprima nada y asi poder limpiar todo el tablero                      *
 		setTimeout(limpiaEscenario, 7000); // se hace un retardo de 7000 milisegundos (7 seg) y luego se llama a la funcion limpiaEscenario
 	}
 
-/**********************************************************************
-*Fracmento que permite despues de que se ocultaln las fichas, poder  *
-*impimir la ficha q se le ha asiganado a acada espacio               *
-**********************************************************************/
 	// si turno es 1 hae la primera si es dos hace la segunda si desps del dos hay iguales hacer lo delso comen
 
 	for(var i = 1; i <= 20; i++)
