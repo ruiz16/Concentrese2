@@ -24,11 +24,10 @@
 
 #cuerpo
 {
-	background-image:url(Images/Background.png);
+	background-image:url(Images/Background.jpg);
 	width:80%;/* 600 es el tamaño que tendra la división */
 	height:100%;/* 560 es el tamaño que tendra la división de altura */
-	margin:0px 0px;/*20px indica el espacio arriba i abajo que se va a dejar con relación a la pagina, el 20px es lo mismo pero aplicado a la izquierda y derecha*/
-	padding:0px 0px;/*deja un espacio de 0 arriba ya abajo y pone uno de 40 pixeles a la izq y derecha*/
+
 }
 
 #Terminar_Juego
